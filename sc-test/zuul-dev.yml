@@ -1,0 +1,9 @@
+#路由配置
+zuul:
+  routes:
+    api-message:
+      path: /message/**
+      serviceId: message-service
+    api-app:
+      path: /app/**
+      serviceId: app-service
